@@ -53,9 +53,9 @@ class Product(models.Model):
 
 
     def __str__(self):
-            return (f'Producto: {self.name},'
-                    f'Descripción: {self.description}'
-                    f'Precio: {self.price}'
-                    f'Fecha de vencimiento: {self.expiration_date}'
-                    f'Fabricante: {self.manufacturer.name}'
+            return (f'Producto: {self.name}, '
+                    f'Descripción: {self.description}, '
+                    f'Precio: {self.price}, '
+                    f'Fecha de vencimiento: {self.expiration_date}, '
+                    f'Fabricante: {self.manufacturer.name}, '
             )
