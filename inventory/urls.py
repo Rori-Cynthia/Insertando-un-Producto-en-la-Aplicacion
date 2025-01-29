@@ -8,6 +8,6 @@ from .views import (
 
 urlpatterns = [
     path("", HomeView.as_view(), name='index'),
-    path('add/', ProductInputView.as_view(), name='add_product'),
-    path('information/', ProductListView.as_view(), name='info_product'),
+    path("add/", ProductInputView.as_view(), name='add_product'),
+    path("information/", ProductListView.as_view(), name='info_product'),
 ]

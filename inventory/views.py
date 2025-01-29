@@ -1,11 +1,11 @@
-from django.views.generic import TemplateView, ListView
 from django.contrib import messages
-from django.views.generic.edit import FormView
 from django.shortcuts import redirect
+from django.views.generic import TemplateView, ListView
+from django.views.generic.edit import FormView
 
-
-from .models import Product
 from .forms import ProductForm
+from .models import Product
+
 
 class HomeView(TemplateView):
     template_name = 'index.html'
